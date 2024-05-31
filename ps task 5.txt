@@ -1,0 +1,87 @@
+n = 5
+fact =1
+sum = 0
+for( i = n ; i>0;i--)
+{
+    fact = fact * i
+    
+    if(i == 1)
+    {
+        sum = sum + i+ "= "
+    }
+    else
+    {
+        sum = sum + i + "*"
+    }
+    
+}
+console.log("the factorial of "+n+" is "+sum +""+fact)
+
+
+
+ a = [1,2,3,4,5,6,9,8]
+ 
+seq = true ;
+for(i=0;i<a.length-1;i++)
+{
+  if(a[i]+1 !== a[i+1])
+  {
+      seq = false;
+      break;
+     
+  }
+}
+if(seq)
+{
+    console.log("the given number is in squence format : "+a.join("") +" : "+seq);
+}
+else
+{
+      console.log("the given number is not in squence format : "+a.join("") +" : "+seq);
+  
+}
+
+// a[0]=1+1 = a[1] = 2   
+//console.log(3!==2) if we have same numbers will get false if dif numbers true
+
+
+
+a = "4533"
+img = true
+temp=0
+for(i=0;i<a.length;i++)
+{
+    count=0
+    for(j=i+1;j<a.length;j++)
+    {
+        if(a[i] == a[j])
+        {
+            count++
+            break
+        }
+    }
+   temp=temp+count
+   
+}
+ if(temp > 0)
+    {
+       img = false;
+    }
+
+if(img)
+{
+    console.log("there is no duplicate values in given number : "+a+" "+ img)
+}
+else
+{
+     console.log("there is duplicate values in given number : "+a+" "+img)
+}
+
+
+
+
+o/p:
+
+the factorial of 5 is 5*4*3*2*1= 120
+the given number is not in squence format : 12345698 : false
+there is duplicate values in given number : 4533 false
